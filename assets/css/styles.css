@@ -1600,6 +1600,16 @@ div.swiper-slide {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 768px) {
+  .modal-form-load {
+    width: 80vw !important;
+    height: 65vh !important;
+  }
+  .x {
+    height: 100vh !important;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .close-modal {
     right: 0rem !important;
