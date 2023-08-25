@@ -8,6 +8,7 @@ const cryptoCurrencySectionPosition = document.querySelector(
 );
 const previewSectionPosition = document.querySelector(".preview_container");
 const contactsSectionPosition = document.querySelector(".contacts_container");
+const telegramBut = document.getElementById("get_in_touch_on_telegram_submit");
 
 const openModalNav = function (event) {
   event.preventDefault();
@@ -15,10 +16,12 @@ const openModalNav = function (event) {
   document.body.style.overflow = "hidden";
   btnsOpenModalNav[0].classList.add("hidden");
   btnCloseModalNav.classList.remove("hidden");
+  telegramBut.classList.add("hidden");
 };
 
 const closeModalNav = function () {
   modalNav.classList.add("hidden");
+  telegramBut.classList.remove("hidden");
   document.body.style.overflow = "";
   btnsOpenModalNav[0].classList.remove("hidden");
   btnCloseModalNav.classList.add("hidden");
