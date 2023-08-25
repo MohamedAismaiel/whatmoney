@@ -3,6 +3,7 @@ const contactCitySelectBox = document.querySelector("#contact-city-select-box");
 const contactWaySelectBox = document.querySelector("#contact-way-select-box");
 const modalCitySelectBox = document.querySelector("#modal-city-select-box");
 const modalWaySelectBox = document.querySelector("#modal-way-select-box");
+const modalFormLoad = document.querySelector("#modal-form-load");
 const modalPopup = document.querySelector("#modal-popup");
 const contactSection = document.querySelector(".contacts_container");
 const contactContentBox = document.querySelector(
@@ -200,6 +201,7 @@ const addDropdownEffect = (item) => {
   if (item.target.id === "modal-contact-input") {
     modalWaySelectBox.classList.toggle("contact-way-margin");
     modalPopup.classList.toggle("contact-way-margin");
+    modalFormLoad.classList.toggle("x");
 
     const additionalFormValue = isMobile ? 23.4 : 14.6; //16.6
     const additionalOverflowValue = isMobile ? 0 : 80; //27.5
@@ -309,6 +311,7 @@ const removeDropdownEffect = (item) => {
       modalWaySelectBox.classList.contains("contact-way-margin");
 
     modalPopup.classList.contains("contact-way-margin");
+    modalFormLoad.classList.contains("x");
     const containerSubtrahendValue = isSecondSelectOpen
       ? formHValue + 27.5
       : formHValue;
@@ -344,7 +347,7 @@ const removeDropdownEffect = (item) => {
   ) {
     modalWaySelectBox.classList.remove("contact-way-margin");
     modalPopup.classList.remove("contact-way-margin");
-
+    modalFormLoad.classList.remove("x");
     changeBoxHeight("reset", modalOverlay, modalOverlayHeight, 27.48);
     const formHValue = isMobile ? 85 : 80;
     const isSecondSelectOpen =
@@ -423,11 +426,11 @@ on("click", ".selectBtn", (item) => {
 });
 
 on("click", ".option", (item) => {
-
   let isFirstMask = false;
   const modalSpecInput = document.querySelector(
     ".modal-form-hidden-сontact-input"
   );
+
   const contactSpecField = document.querySelector("#contact-way-spec-input");
   const modalFormCurrencyType = document
     .querySelector(".modal-form.cform")
