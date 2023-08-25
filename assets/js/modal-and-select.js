@@ -81,10 +81,12 @@ const overlaycont = document.getElementById("form1cont");
 const telegBut = document.getElementById("get_in_touch_on_telegram_submit");
 
 window.onscroll = function () {
-  if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-    telegBut.classList.add("hidden");
-  } else {
-    telegBut.classList.remove("hidden");
+  if (window.innerWidth > 676) {
+    if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+      telegBut.classList.add("hidden");
+    } else {
+      telegBut.classList.remove("hidden");
+    }
   }
 };
 window.onunload = function () {
