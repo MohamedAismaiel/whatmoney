@@ -143,4 +143,7 @@ body {
     color: #0c0b0a;
     cursor: pointer;
   }
+  .header__inner {
+    margin-top: 10rem;
+  }
 }
