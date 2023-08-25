@@ -79,7 +79,7 @@ body {
   }
 
   .quotes::before {
-    top: 50px !important;
+    top: 150px !important;
     width: 35.5rem;
   }
 
