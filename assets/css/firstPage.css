@@ -4,6 +4,7 @@
 body {
   overflow: hidden;
 }
+
 .quotes::before {
   top: 480px !important;
 }
@@ -73,11 +74,12 @@ body {
 
 @media only screen and (max-width: 767px) {
   .firstPage-section {
-    margin-top: 0px;
+    margin-top: 50px;
+
   }
 
   .quotes::before {
-    top: 350px !important;
+    top: 250px !important;
     width: 35.5rem;
   }
 
@@ -144,6 +146,6 @@ body {
     cursor: pointer;
   }
   .header__inner {
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
   }
 }

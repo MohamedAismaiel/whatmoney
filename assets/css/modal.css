@@ -40,10 +40,12 @@
     height: 100% !important;
   }
   .modal-form-contacts-input-box {
+    gap: 0.5rem;
     /* min-height: 8vh !important; */
     /* flex-direction: column !important; */
   }
   .modal-form {
+    /* height: 95vh !important; */
     /* height: max-content !important; */
   }
   .xx {

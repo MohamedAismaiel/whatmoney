@@ -30,10 +30,10 @@ const on = (listener, query, fn) => {
 };
 const changeBoxHeight = (operationType, box, heigthValue, addingValue) => {
   if (operationType === "addition") {
-    box.style.height = heigthValue + addingValue + "vh";
+    box.style.height = heigthValue + addingValue + 10 + "vh";
   }
   if (operationType === "reset") {
-    box.style.height = heigthValue - addingValue + "vh";
+    box.style.height = heigthValue - addingValue + 10 + "vh";
   }
   if (operationType === "additionpercent") {
     box.style.height = heigthValue + addingValue + "%";
@@ -494,7 +494,6 @@ on("click", ".option", (item) => {
     modalSpecInput.placeholder = "username/телефон";
     modalSpecInput1.placeholder = "username/телефон";
     removeAllEventListeners(modalSpecInput);
-    
   } else {
     modalSpecInput.placeholder = "Введите телефон";
     modalSpecInput1.placeholder = "Введите телефон";
