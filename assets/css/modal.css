@@ -11,9 +11,9 @@
 
 .close-modal-load {
   position: absolute;
-  top: -0.8rem;
-  right: 1rem;
-  font-size: 5rem;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
   color: #fff;
   cursor: pointer;
   border: none;
