@@ -23,6 +23,7 @@ const overlayLoad = document.querySelector(".overlay-load");
 const btnCloseModal = document.querySelector(".close-modal");
 const btnCloseLoadModal = document.querySelector(".close-modal-load");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
+
 const modalFormSbmtBtn = document.querySelector(".modal-form-btn-currency");
 const loadmodalFormSbmtBtn = document.querySelector(".modal-form-btn-load");
 const modalFormFirstInput = document.querySelector("#modal-form-first-input");
@@ -77,7 +78,15 @@ const modalCommentTextarea = document.querySelector(".modal-form-textarea");
 const allModalSelectOptions = document.querySelectorAll(".option.cform");
 const overlay1 = document.getElementById("form1popup");
 const overlaycont = document.getElementById("form1cont");
+const telegBut = document.getElementById("get_in_touch_on_telegram_submit");
 
+window.onscroll = function () {
+  if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+    telegBut.classList.add("hidden");
+  } else {
+    telegBut.classList.remove("hidden");
+  }
+};
 window.onunload = function () {
   sessionStorage.setItem("popupViewed", false);
 };
