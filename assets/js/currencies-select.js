@@ -3,7 +3,7 @@ const contactCitySelectBox = document.querySelector("#contact-city-select-box");
 const contactWaySelectBox = document.querySelector("#contact-way-select-box");
 const modalCitySelectBox = document.querySelector("#modal-city-select-box");
 const modalWaySelectBox = document.querySelector("#modal-way-select-box");
-const modalFormLoad = document.querySelector("#modal-form-load");
+const modalFormLoad = document.querySelector(".modal-form-load");
 const modalPopup = document.querySelector("#modal-popup");
 const contactSection = document.querySelector(".contacts_container");
 const contactContentBox = document.querySelector(
@@ -430,6 +430,9 @@ on("click", ".option", (item) => {
   const modalSpecInput = document.querySelector(
     ".modal-form-hidden-сontact-input"
   );
+  const modalSpecInput1 = document.querySelector(
+    ".modal-form-hidden-сontact-input1"
+  );
 
   const contactSpecField = document.querySelector("#contact-way-spec-input");
   const modalFormCurrencyType = document
@@ -483,15 +486,18 @@ on("click", ".option", (item) => {
     removeAllEventListeners(contactSpecField);
     isFirstMask = true;
   } else {
-    contactSpecField.placeholder = "Введите ваш телефон";
-    addPhoneMaskToInputs();
+    // contactSpecField.placeholder = "Введите ваш телефон";
+    // addPhoneMaskToInputs();
   }
 
   if (item.srcElement.classList.contains("modal-tg-option")) {
     modalSpecInput.placeholder = "username/телефон";
+    modalSpecInput1.placeholder = "username/телефон";
     removeAllEventListeners(modalSpecInput);
+    
   } else {
     modalSpecInput.placeholder = "Введите телефон";
+    modalSpecInput1.placeholder = "Введите телефон";
     !isFirstMask && addPhoneMaskToInputs();
   }
   isMaskAdded = false;
