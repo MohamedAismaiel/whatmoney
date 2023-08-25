@@ -89,6 +89,8 @@ window.onload = function () {
       sessionStorage.setItem("popupViewed", true);
     }, 1000);
   }
+  overlay1.classList.remove("hidden");
+  overlaycont.classList.remove("hidden");
   // setTimeout(() => {
   //   overlay1.classList.remove("hidden");
   //   overlaycont.classList.remove("hidden");
