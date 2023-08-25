@@ -1624,7 +1624,7 @@ div.swiper-slide {
     font-size: 2rem !important;
   }
   .modal-form-load {
-    background: rgb(25, 23, 20);
+    background: rgb(25, 23, 20) !important;
   }
 }
 
