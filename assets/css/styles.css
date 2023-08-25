@@ -1626,11 +1626,18 @@ div.swiper-slide {
   .modal-form-load {
     background: rgb(25, 23, 20) !important;
   }
-  .currency_form {
-    height: 52% !important;
+  .currency_container {
+    height: 220vh !important;
   }
-  .cryptocurrency_form {
-    height: 105% !important;
+  .currency_form {
+    height: 48% !important;
+  }
+  .cryptocurrency_container{
+    height: 124vh !important;
+  }
+  .cryptocurrency_form{
+    height: 85% !important;
+  }
 }
 
 @media only screen and (max-width: 375px) {
