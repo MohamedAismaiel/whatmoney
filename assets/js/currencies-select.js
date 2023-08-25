@@ -483,7 +483,8 @@ on("click", ".option", (item) => {
 
   if (
     item.srcElement.classList.contains("contact-tg-option") ||
-    item.srcElement.classList.contains("skip")
+    item.srcElement.classList.contains("skip") ||
+    item.srcElement.classList.contains("modal-tg-option")
   ) {
     contactSpecField.placeholder = "Введите ваш username или телефон";
     removeAllEventListeners(contactSpecField);
@@ -496,6 +497,7 @@ on("click", ".option", (item) => {
   }
 
   if (item.srcElement.classList.contains("modal-tg-option")) {
+    console.log(1);
     modalSpecInput.placeholder = "username/телефон";
     modalSpecInput1.placeholder = "username/телефон";
     removeAllEventListeners(modalSpecInput);
