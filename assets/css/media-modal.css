@@ -142,6 +142,7 @@
   .modal-form-load {
     top: 14.5vh;
     width: 55%;
+    background: rgba(25, 23, 20);
   }
   .modal-form-title-image {
     margin-top: 0px;
