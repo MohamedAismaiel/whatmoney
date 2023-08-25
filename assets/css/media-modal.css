@@ -7,30 +7,30 @@
 
 /* Landscape phones and portrait tablets */
 @media only screen and (max-width: 768px) {
-  .modal-form-inputs{
+  .modal-form-inputs {
     display: block;
     height: auto;
   }
-  .modal-form-input-label-box{
+  .modal-form-input-label-box {
     width: 100%;
     margin-top: 5px;
   }
-  .modal-form-input-label{
+  .modal-form-input-label {
     font-size: 2.3vh;
   }
-  .modal-form-currencies-label{
+  .modal-form-currencies-label {
     font-size: 2.3vh;
   }
   .modal-form-title {
     font-size: 6.4vw;
   }
-  .modal-form-title-load{
+  .modal-form-title-load {
     font-size: 8.5vw;
   }
   .modal-form-subtitle {
     font-size: 3.5vw;
   }
-  .modal-form-title-image img{
+  .modal-form-title-image img {
     width: 22.642vw;
   }
   .modal-form {
@@ -39,13 +39,13 @@
     height: 100vh;
     transform: translate(-50%, 0);
   }
-  .modal-form-load{
+  .modal-form-load {
     top: 14.5vh;
     width: 81%;
     height: 88vh;
     /* background: rgba(25, 23, 20, 1); */
   }
-  .modal-form-title-image{
+  .modal-form-title-image {
     margin-top: 20px;
   }
   .activator-ov {
@@ -55,10 +55,13 @@
   .overlay {
     height: 120vh;
   }
-  .close-modal{
+  .close-modal {
     top: -0.8rem;
     right: 1rem;
     font-size: 4rem;
+  }
+  .modal-form-subtitle-load {
+    font-size: 3vw;
   }
 }
 
@@ -123,24 +126,24 @@
   .modal-form-title {
     font-size: 6.4vw;
   }
-  .modal-form-title-load{
-    font-size: 5.5vw;
+  .modal-form-title-load {
+    font-size: 7.5vw;
   }
   .modal-form-subtitle {
     font-size: 2.5vw;
   }
-  .modal-form-title-image img{
+  .modal-form-title-image img {
     width: 18.642vw;
   }
   .modal-form {
     top: 2.5vh;
     transform: translate(-50%, 0);
   }
-  .modal-form-load{
+  .modal-form-load {
     top: 14.5vh;
     width: 55%;
   }
-  .modal-form-title-image{
+  .modal-form-title-image {
     margin-top: 0px;
   }
   .activator-ov {
