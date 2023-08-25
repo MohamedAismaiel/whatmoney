@@ -8,7 +8,7 @@ const contactSection = document.querySelector(".contacts_container");
 const contactContentBox = document.querySelector(
   ".contacts_container_content-box"
 );
-const x = document.querySelector(".modal-form.modal-form-load.hidden.cform");
+
 const modalFormContainer = document.querySelector(
   ".modal-form.modal-form-currency.hidden.cform"
 );
@@ -161,7 +161,7 @@ const addDropdownEffect = (item) => {
   }
   if (item.target.id === "contact-way-default-input") {
     contactWaySelectBox.classList.toggle("contact-way-margin");
-    x.classList.toggle("x");
+
     changeBoxHeight("addition", contactSection, contactSectionHeight, 27.5);
     changeBoxHeight(
       "addition",
@@ -200,8 +200,7 @@ const addDropdownEffect = (item) => {
   if (item.target.id === "modal-contact-input") {
     modalWaySelectBox.classList.toggle("contact-way-margin");
     modalPopup.classList.toggle("contact-way-margin");
-    x.classList.toggle("x");
-    console.log(x);
+
     const additionalFormValue = isMobile ? 23.4 : 14.6; //16.6
     const additionalOverflowValue = isMobile ? 0 : 80; //27.5
     changeBoxHeight("addition", modalOverlay, modalOverlayHeight, 27.5);
@@ -345,7 +344,7 @@ const removeDropdownEffect = (item) => {
   ) {
     modalWaySelectBox.classList.remove("contact-way-margin");
     modalPopup.classList.remove("contact-way-margin");
-    x.classList.remove("x");
+
     changeBoxHeight("reset", modalOverlay, modalOverlayHeight, 27.48);
     const formHValue = isMobile ? 85 : 80;
     const isSecondSelectOpen =
@@ -424,6 +423,7 @@ on("click", ".selectBtn", (item) => {
 });
 
 on("click", ".option", (item) => {
+
   let isFirstMask = false;
   const modalSpecInput = document.querySelector(
     ".modal-form-hidden-сontact-input"

@@ -30,6 +30,7 @@ const modalFormSecondInput = document.querySelector("#modal-form-second-input");
 
 const modalCityInput = document.querySelector("#modal-city-input");
 const modalOtherSityOption = document.querySelector("#modalOtherOption");
+const modalOtherSityOption1 = document.querySelector("#modalOtherOption1");
 const hiddenCityInput = document.querySelector(".modal-form-hidden-city-input");
 const cityInput = document.querySelector(".modal-form-city-input");
 
@@ -48,17 +49,17 @@ const modalFormNameInputCurrency = document.querySelector(
 const modalContactInput = document.querySelector("#modal-contact-input");
 
 const contactOptions = document.querySelectorAll(".contact-option");
-const hiddenContactInput = document.querySelector(
+const hiddenContactInput = document.querySelectorAll(
   ".modal-form-hidden-сontact-input"
 );
 const contactOptionsCurrency = document.querySelectorAll(
   ".contact-option-currency"
 );
-const hiddenContactInputCurrency = document.querySelector(
+const hiddenContactInputCurrency = document.querySelectorAll(
   ".modal-form-hidden-сontact-input-currency"
 );
-const contactInput = document.querySelector(".modal-form-contact-input");
-const contactInputCurrency = document.querySelector(
+const contactInput = document.querySelectorAll(".modal-form-contact-input");
+const contactInputCurrency = document.querySelectorAll(
   ".modal-form-contact-input-currency"
 );
 const contactOtherSityOption = document.querySelector(
@@ -216,18 +217,31 @@ modalOtherSityOption.addEventListener("click", function () {
   hiddenCityInput.classList.remove("hidden");
   cityInput.classList.add("halfWidth");
 });
+modalOtherSityOption1.addEventListener("click", function () {
+  hiddenCityInput.classList.remove("hidden");
+  cityInput.classList.add("halfWidth");
+});
 
 for (let i = 0; i < contactOptions.length; i++) {
   contactOptions[i].addEventListener("click", function () {
-    hiddenContactInput.classList.remove("hidden");
-    contactInput.classList.add("halfWidth");
+    hiddenContactInput.forEach((e) => {
+      e.classList.remove("hidden");
+
+    });
+    contactInput.forEach((e) => {
+      e.classList.add("halfWidth");
+    });
   });
 }
 
 for (let i = 0; i < contactOptionsCurrency.length; i++) {
   contactOptionsCurrency[i].addEventListener("click", function () {
-    hiddenContactInputCurrency.classList.remove("hidden");
-    contactInputCurrency.classList.add("halfWidth");
+    hiddenContactInputCurrency.forEach((e) => {
+      e.classList.remove("hidden");
+    });
+    contactInputCurrency.forEach((e) => {
+      e.classList.add("halfWidth");
+    });
   });
 }
 
