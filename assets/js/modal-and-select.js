@@ -75,7 +75,20 @@ const hiddenPhoneInput = document.querySelector(
 );
 const modalCommentTextarea = document.querySelector(".modal-form-textarea");
 const allModalSelectOptions = document.querySelectorAll(".option.cform");
-
+const overlay1 = document.getElementById("form1popup");
+const overlaycont = document.getElementById("form1cont");
+window.onunload = function () {
+  sessionStorage.setItem("popupViewed", false);
+};
+window.onload = function () {
+  if (sessionStorage.getItem("popupViewed") === false) {
+    setTimeout(() => {
+      overlay1.classList.remove("hidden");
+      overlaycont.classList.remove("hidden");
+      sessionStorage.setItem("popupViewed", true);
+    }, 1000);
+  }
+};
 const hideSpecificOption = (optionType) => {
   if (optionType === "usdt") {
     const specificOptions = [...allModalSelectOptions].filter((option) => {
