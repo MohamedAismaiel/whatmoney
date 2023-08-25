@@ -29,11 +29,27 @@ const on = (listener, query, fn) => {
   });
 };
 const changeBoxHeight = (operationType, box, heigthValue, addingValue) => {
+  if (window.innerWidth < 450) {
+    if (operationType === "addition") {
+      box.style.height = heigthValue + addingValue + 15 + "vh";
+    }
+    if (operationType === "reset") {
+      box.style.height = heigthValue - addingValue + 15 + "vh";
+    }
+    if (operationType === "additionpercent") {
+      box.style.height = heigthValue + addingValue + "%";
+    }
+    if (operationType === "resetpercent") {
+      box.style.height = heigthValue - addingValue + "%";
+    }
+    return;
+  }
+
   if (operationType === "addition") {
-    box.style.height = heigthValue + addingValue + 15 + "vh";
+    box.style.height = heigthValue + addingValue + "vh";
   }
   if (operationType === "reset") {
-    box.style.height = heigthValue - addingValue + 15 + "vh";
+    box.style.height = heigthValue - addingValue + "vh";
   }
   if (operationType === "additionpercent") {
     box.style.height = heigthValue + addingValue + "%";
