@@ -1551,9 +1551,9 @@ div.swiper-slide {
   align-items: center;
   filter: blur(0px) !important;
 }
-/* .overlay-currency {
+.overlay-currency {
   height: 100vh !important;
-} */
+}
 .swiper-slide-active {
   filter: blur(0px);
 }
