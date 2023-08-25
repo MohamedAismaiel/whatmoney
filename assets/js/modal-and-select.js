@@ -423,17 +423,18 @@ const validateLoadModalForm = () => {
     emptyFields.push(modalContactInput.parentElement);
     emptyFields.push(hiddenContactInput);
   }
-  if (emptyFields.length > 0) {
-    emptyFields.forEach((element) => element.classList.add("border-pulse"));
-    setTimeout(() => {
-      emptyFields.forEach((element) =>
-        element.classList.remove("border-pulse")
-      );
-    }, 1700);
-    return false;
-  } else {
-    return true;
-  }
+  // if (emptyFields.length > 0) {
+  //   emptyFields.forEach((element) => element.classList.add("border-pulse"));
+  //   setTimeout(() => {
+  //     emptyFields.forEach((element) =>
+  //       element.classList.remove("border-pulse")
+  //     );
+  //   }, 1700);
+  //   return false;
+  // } else {
+  //   return true;
+  // }
+  return true;
 };
 
 modalFormSbmtBtn.addEventListener("click", async (event) => {

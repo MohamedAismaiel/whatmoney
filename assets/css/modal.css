@@ -396,7 +396,8 @@ body > div > div > div:nth-child(7) {
   border-radius: 20px;
   color: #ffffff;
 }
-.modal-form-btn-box {
+.modal-form-btn-box,
+.modal-form-btn-box1 {
   margin-top: 11.5%;
   height: 6.35vh;
   min-height: 6.35vh;
