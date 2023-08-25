@@ -36,8 +36,8 @@
     margin-bottom: 1rem;
   }
   .halfWidth {
-    width: 100% !important;
-    height: 100% !important;
+    /* width: 100% !important;
+    height: 100% !important; */
   }
   .modal-form-contacts-input-box {
     gap: 0.5rem;
@@ -456,6 +456,6 @@ body > div > div > div:nth-child(7) {
 
 @media only screen and (max-width: 450px) {
   .modal-form-hidden-сontact-input {
-    width: 95% !important;
+    /* width: 95% !important; */
   }
 }

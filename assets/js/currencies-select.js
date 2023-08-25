@@ -30,10 +30,10 @@ const on = (listener, query, fn) => {
 };
 const changeBoxHeight = (operationType, box, heigthValue, addingValue) => {
   if (operationType === "addition") {
-    box.style.height = heigthValue + addingValue + 10 + "vh";
+    box.style.height = heigthValue + addingValue + 15 + "vh";
   }
   if (operationType === "reset") {
-    box.style.height = heigthValue - addingValue + 10 + "vh";
+    box.style.height = heigthValue - addingValue + 15 + "vh";
   }
   if (operationType === "additionpercent") {
     box.style.height = heigthValue + addingValue + "%";
