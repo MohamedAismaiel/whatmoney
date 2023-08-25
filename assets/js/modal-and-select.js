@@ -83,12 +83,12 @@ window.onunload = function () {
 };
 window.onload = function () {
   if (sessionStorage.getItem("popupViewed") === false) {
+    setTimeout(() => {
+      overlay1.classList.remove("hidden");
+      overlaycont.classList.remove("hidden");
+      sessionStorage.setItem("popupViewed", true);
+    }, 1000);
   }
-  setTimeout(() => {
-    overlay1.classList.remove("hidden");
-    overlaycont.classList.remove("hidden");
-    sessionStorage.setItem("popupViewed", true);
-  }, 1000);
 };
 const hideSpecificOption = (optionType) => {
   if (optionType === "usdt") {
