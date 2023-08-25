@@ -31,6 +31,21 @@
 .halfWidth {
   width: 48% !important;
 }
+@media only screen and (max-width: 450px) {
+  .halfWidth {
+    width: 100% !important;
+    height: 50% !important;
+  }
+  .modal-form-contacts-input-box {
+    flex-direction: column !important;
+  }
+  .modal-form {
+    height: max-content !important;
+  }
+  .xx {
+    height: max-content !important;
+  }
+}
 
 .placeholder-text {
   color: #a49c8c;
@@ -431,4 +446,10 @@ body > div > div > div:nth-child(7) {
   width: 45% !important;
   padding-left: 3%;
   margin-top: 2% !important;
+}
+
+@media only screen and (max-width: 450px) {
+  .modal-form-hidden-сontact-input {
+    width: 95% !important;
+  }
 }
