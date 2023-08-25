@@ -1602,12 +1602,12 @@ div.swiper-slide {
 }
 @media only screen and (max-width: 450px) {
   .close-modal {
-    right: 2px !important;
-    top: 2px !important;
+    right: 0.5% !important;
+    top: 1% !important;
   }
   .close-modal-load {
-    right: 15px !important;
-    top: 2px !important;
+    right: 0.5% !important;
+    top: 1% !important;
   }
 }
 
