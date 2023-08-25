@@ -89,11 +89,11 @@ window.onload = function () {
       sessionStorage.setItem("popupViewed", true);
     }, 1000);
   }
-  setTimeout(() => {
-    overlay1.classList.remove("hidden");
-    overlaycont.classList.remove("hidden");
-    sessionStorage.setItem("popupViewed", true);
-  }, 1000);
+  // setTimeout(() => {
+  //   overlay1.classList.remove("hidden");
+  //   overlaycont.classList.remove("hidden");
+  //   sessionStorage.setItem("popupViewed", true);
+  // }, 1000);
 };
 const hideSpecificOption = (optionType) => {
   if (optionType === "usdt") {
@@ -246,6 +246,7 @@ for (let i = 0; i < contactOptions.length; i++) {
     hiddenContactInput.forEach((e) => {
       e.classList.remove("hidden");
     });
+
     contactInput.forEach((e) => {
       e.classList.add("halfWidth");
     });
