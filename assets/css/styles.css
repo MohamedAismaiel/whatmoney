@@ -1617,7 +1617,7 @@ div.swiper-slide {
     font-size: 3rem !important;
   }
   .close-modal-load {
-    right: 0 !important;
+    right: -1rem !important;
     height: max-content;
     width: max-content;
     top: 2rem !important;
