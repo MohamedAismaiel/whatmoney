@@ -37,16 +37,17 @@
   }
   .halfWidth {
     width: 100% !important;
-    height: 50% !important;
+    height: 100% !important;
   }
   .modal-form-contacts-input-box {
-    flex-direction: column !important;
+    /* min-height: 8vh !important; */
+    /* flex-direction: column !important; */
   }
   .modal-form {
-    height: max-content !important;
+    /* height: max-content !important; */
   }
   .xx {
-    height: max-content !important;
+    /* height: max-content !important; */
   }
 }
 
