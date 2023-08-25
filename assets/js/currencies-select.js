@@ -176,6 +176,7 @@ const addDropdownEffect = (item) => {
     );
     window.scrollBy(0, convertVhToPx(16.6));
   }
+
   if (item.target.id === "contact-way-default-input") {
     contactWaySelectBox.classList.toggle("contact-way-margin");
 
@@ -495,6 +496,10 @@ on("click", ".option", (item) => {
       }
     }
     changeModalFormType(fieldType, fieldValue);
+  }
+  if (item.srcElement.classList.contains("optionn")) {
+    console.log(1);
+    contactSpecField.classList.remove("hidden");
   }
 
   if (
