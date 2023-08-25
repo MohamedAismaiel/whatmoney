@@ -1623,6 +1623,9 @@ div.swiper-slide {
     top: 2rem !important;
     font-size: 2rem !important;
   }
+  .modal-form-load {
+    background: rgb(25, 23, 20);
+  }
 }
 
 @media only screen and (max-width: 375px) {
