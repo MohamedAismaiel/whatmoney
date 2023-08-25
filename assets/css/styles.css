@@ -1612,7 +1612,7 @@ div.swiper-slide {
 
 @media only screen and (max-width: 450px) {
   .close-modal {
-    right: 0rem !important;
+    right: -2rem !important;
     top: 2rem !important;
     font-size: 3rem !important;
   }
