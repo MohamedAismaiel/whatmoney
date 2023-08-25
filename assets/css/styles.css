@@ -1629,6 +1629,8 @@ div.swiper-slide {
   .currency_form {
     height: 52% !important;
   }
+  .cryptocurrency_form {
+    height: 105% !important;
 }
 
 @media only screen and (max-width: 375px) {
