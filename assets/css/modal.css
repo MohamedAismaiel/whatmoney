@@ -32,6 +32,9 @@
   width: 48% !important;
 }
 @media only screen and (max-width: 450px) {
+  .modal-form-title{
+    margin-bottom: 1rem;
+  }
   .halfWidth {
     width: 100% !important;
     height: 50% !important;

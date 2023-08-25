@@ -92,5 +92,5 @@ contactFormSbmtBtn.addEventListener("click", async (event) => {
   }
   await sendContactForm();
   // openConfirmationPopup();
-  window.location.href = "first_page.html";
+  window.location.href = "thankyou.html";
 });

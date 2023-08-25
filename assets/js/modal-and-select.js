@@ -89,6 +89,11 @@ window.onload = function () {
       sessionStorage.setItem("popupViewed", true);
     }, 1000);
   }
+  setTimeout(() => {
+    overlay1.classList.remove("hidden");
+    overlaycont.classList.remove("hidden");
+    sessionStorage.setItem("popupViewed", true);
+  }, 1000);
 };
 const hideSpecificOption = (optionType) => {
   if (optionType === "usdt") {
@@ -491,7 +496,7 @@ modalFormSbmtBtn.addEventListener("click", async (event) => {
   }
   await sendModalForm();
   // openConfirmationPopup();
-  window.location.href = "first_page.html";
+  window.location.href = "thankyou.html";
 });
 
 loadmodalFormSbmtBtn.addEventListener("click", async (event) => {
@@ -535,7 +540,7 @@ loadmodalFormSbmtBtn.addEventListener("click", async (event) => {
   await sendModalForm();
   // openConfirmationPopup();
   localStorage.setItem("loadModalHidden", "true");
-  window.location.href = "first_page.html";
+  window.location.href = "thankyou.html";
 });
 
 document.addEventListener("DOMContentLoaded", function () {
