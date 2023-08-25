@@ -244,7 +244,7 @@ const removeDropdownEffect = (item) => {
   ) {
     contactCitySelectBox.classList.remove("city-select-margin");
     contactWaySelectBox.classList.remove("contact-way-margin");
-    x.classList.remove("x");
+
     if (isMobile && contactSectionHeight > 167) {
       changeBoxHeight(
         "reset",
@@ -275,7 +275,7 @@ const removeDropdownEffect = (item) => {
     item?.id === "contact-way-default-input"
   ) {
     contactWaySelectBox.classList.remove("contact-way-margin");
-    x.classList.remove("x");
+
     if (isMobile && contactSectionHeight > 178) {
       changeBoxHeight(
         "reset",
