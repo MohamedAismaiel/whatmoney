@@ -481,13 +481,18 @@ on("click", ".option", (item) => {
     changeModalFormType(fieldType, fieldValue);
   }
 
-  if (item.srcElement.classList.contains("contact-tg-option")) {
+  if (
+    item.srcElement.classList.contains("contact-tg-option") ||
+    item.srcElement.classList.contains("skip")
+  ) {
     contactSpecField.placeholder = "Введите ваш username или телефон";
     removeAllEventListeners(contactSpecField);
     isFirstMask = true;
+    modalSpecInput.placeholder = "username/телефон";
+    modalSpecInput1.placeholder = "username/телефон";
   } else {
-    // contactSpecField.placeholder = "Введите ваш телефон";
-    // addPhoneMaskToInputs();
+    contactSpecField.placeholder = "Введите ваш телефон";
+    addPhoneMaskToInputs();
   }
 
   if (item.srcElement.classList.contains("modal-tg-option")) {
