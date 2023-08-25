@@ -72,9 +72,13 @@
 .modal-form-load {
   width: 38%;
   height: 65vh;
-
+  background-image: url("../images/popupTexture.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  opacity: 0.8;
   border: 1px solid #a49c8c;
-  background: rgba(25, 23, 20, 0.4);
+  /* background: rgba(25, 23, 20, 0.4); */
 }
 
 .activator-ov {
