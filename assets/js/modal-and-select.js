@@ -226,7 +226,6 @@ for (let i = 0; i < contactOptions.length; i++) {
   contactOptions[i].addEventListener("click", function () {
     hiddenContactInput.forEach((e) => {
       e.classList.remove("hidden");
-
     });
     contactInput.forEach((e) => {
       e.classList.add("halfWidth");
