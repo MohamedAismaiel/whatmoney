@@ -1626,6 +1626,9 @@ div.swiper-slide {
   .modal-form-load {
     background: rgb(25, 23, 20) !important;
   }
+  .currency_form {
+    height: 52% !important;
+  }
 }
 
 @media only screen and (max-width: 375px) {
